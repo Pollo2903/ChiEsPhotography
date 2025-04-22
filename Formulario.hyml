@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formulario.css">
+
+</head>
+<body>
+    <section id="contacto">  
+<div class="info">
+    <img src="info-1.svg" class="img-1">
+ <div class="location">
+    <div class="icons">
+        <img src="gps.svg" alt="">
+        <a href="https://maps.app.goo.gl/txGtSFVNSm5WeCi97"><p>5 sur # 2-59 barrio 20 de Julio</p></a>
+    </div>
+    <div class="icons">
+        <img src="number.svg" alt="">
+        <a href="https://wa.me/3125866556"><p>3125866556</p></a>
+    </div>
+    <div class="icons">
+        <img src="email.svg" alt="">
+        <p></p>
+    </div>
+ </div>
+<div class="social">
+    <img src="fa.svg" alt="">
+    <img src="ins.svg" alt="">
+    <img src="tw.svg" alt="">
+</div>
+    </div>
+    </section>
+</body>
+</html>
