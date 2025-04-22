@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+h1 {
+font-size: 65px;
+font-style: italic;
+}
+h2 {
+font-size: 55px;
+}
+h3 {
+    font-size: 25px;
+    text-align: center;
+}
+header {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background: #444;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.hidden {
+    display: none;
+}
+
+.product {
+    width: 200px; /* Ajusta el tamaño de cada producto */
+    text-align: center;
+    margin: 10px; /* Espacio adicional alrededor */
+}
+
+.product img {
+    width: 100%;
+    border: 5px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.folder-content:not(.hidden),
+.price:not(.hidden) {
+    opacity: 1;
+    transform: translateY(0);
+}
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre productos */
+    justify-content: center; /* Centrar los productos en la página */
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 500px; /* Ajusta el tamaño del logo */
+    height: auto;
+    margin-right: 10px; /* Espacio entre el logo y el título */
+}
+footer section {
+font-size: 35px;
+}
+
+a {
+    color: black; /* Usa el color normal del texto */
+    text-decoration: none; /* Quita el subrayado */
+  }
+  
+  a:hover {
+    color: blue; /* Cambia de color al pasar el mouse */
+  }
+ /* ======= PRELOADER ======= */
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1.5s ease-out;
+}
+
+/* Tamaño del logo en el preloader */
+#logo-inicio {
+    width: 1000px; /* Tamaño grande */
+    animation: bounce 2s infinite alternate ease-in-out;
+    position: relative;  /* Permite usar z-index */
+    z-index: 1000;  /* Un número alto para que esté arriba */
+}
+
+/* Efecto de "caminar" */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+/* Ocultar el contenido hasta que la página cargue */
+.oculto {
+    display: none;
+}
+
